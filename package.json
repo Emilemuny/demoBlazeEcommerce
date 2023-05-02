@@ -1,7 +1,30 @@
 {
-  "name": "$name$",
-  "version": "$version$",
-  "dependencies": {
-    $END$
+  "name": "qa-ce591c8e-47c9-4af0-a1a6-5679cf0177f5-qa",
+  "version": "1.0.0",
+  "description": "QA Engineer Test automation Assignment",
+  "author": "Emile Munyangabe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheoremOne-Assessments/qa-ce591c8e-47c9-4af0-a1a6-5679cf0177f5-qa.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "12.11.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-cypress": "^2.8.1",
+    "mocha": "^9.2.2",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0",
+    "randomstring": "^1.2.2"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:open:mobile": "cypress open --config viewportWidth=375,viewportHeight=667",
+    "cypress:run": "cypress run",
+    "cypress:run:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
+    "cypress:run:api": "cypress run --spec 'cypress/tests/api/*'"
   }
 }
