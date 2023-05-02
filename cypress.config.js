@@ -7,10 +7,9 @@ module.exports = defineConfig({
     signup_endpoint: "https://api.demoblaze.com/signup",
     login_endpoint: "https://api.demoblaze.com/login",
     viewCart_endpoint: "https://api.demoblaze.com/viewcart",
-    view_endpoint: "https://api.demoblaze.com/view",
-    deleteItem_endpoint: "https://api.demoblaze.com/signup",
-    deleteCart_endpoint: "https://api.demoblaze.com/login",
-    purchaseOrder_endpoint: "https://api.demoblaze.com/viewcart",
+    addtoCart_endpoint: "https://api.demoblaze.com/addtocart",
+    deleteItem_endpoint: "https://api.demoblaze.com/deleteitem",
+    deleteCart_endpoint: "https://api.demoblaze.com/deletecart",
     pagination : "https://api.demoblaze.com/bycat"
   },
   e2e: {
