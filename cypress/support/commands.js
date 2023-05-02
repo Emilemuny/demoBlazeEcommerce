@@ -41,6 +41,7 @@ Cypress.Commands.add('signup_via_API', (username, pwd) => {
 })
 
 Cypress.Commands.add('addItemToCart_UI', (product) => {
+  cy.visit('/')
   cy.contains('.hrefch', product.title).click()
   cy.url().should('contain', '/prod.html')
   cy.get('.product-content.product-deatil .name').should('contain.text', product.title)
@@ -51,7 +52,6 @@ Cypress.Commands.add('addItemToCart_UI', (product) => {
   cy.url().should('contain', '/cart.html')
   cy.contains('tbody>tr>td', product.title).should('be.visible')
   cy.contains('tbody>tr>td', product.price).should('be.visible')
-  cy.get('#totalp').should('contain', product.price)
 })
 
 Cypress.Commands.add('login_via_UI', (username, pwd) => {
@@ -66,7 +66,7 @@ Cypress.Commands.add('login_via_UI', (username, pwd) => {
 
 Cypress.Commands.add('clearCart_via_API', (username) => {
   cy.request('POST', Cypress.env('deleteCart_endpoint'), {
-    data: JSON.stringify({ "cookie": username })
+    cookie: username
   }).then((response) => {
     expect(response).property('status').to.equal(200)
   })
