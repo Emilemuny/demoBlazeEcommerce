@@ -24,3 +24,9 @@
   * Play About Us Video
   * Send a message through contant
   * Competing Browsing the store main categories tests
+
+* Assignement completed tasks:
+  * Login tests
+  * Sign up tests
+  * Checkout tests
+  * Cart tests
