@@ -2,3 +2,7 @@ node_modules
 package-lock.json
 cypress.env.json
 .idea
+cypress/videos
+cypress/screenshots
+cypress/results
+mochawesome-report

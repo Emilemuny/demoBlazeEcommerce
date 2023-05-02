@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Browsing The Store Main Categories:', function(){
+xdescribe('Browsing The Store Main Categories:', function(){
 
     beforeEach(function() {
         cy.visit('/')

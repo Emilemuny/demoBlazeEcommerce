@@ -2,6 +2,13 @@ const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   projectId: "",
+  reporter: "mochawesome",
+  reporterOptions: {
+    reportDir: 'cypress/results',
+    overwrite: false,
+    html: false,
+    json: true,
+  },
   retries: { "runMode": 0, "openMode": 0 },
   env: {
     signup_endpoint: "https://api.demoblaze.com/signup",
