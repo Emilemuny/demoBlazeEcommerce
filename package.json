@@ -1,11 +1,11 @@
 {
-  "name": "qa-ce591c8e-47c9-4af0-a1a6-5679cf0177f5-qa",
+  "name": "demoBlazeEcommerce",
   "version": "1.0.0",
   "description": "QA Engineer Test automation Assignment",
   "author": "Emile Munyangabe",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheoremOne-Assessments/qa-ce591c8e-47c9-4af0-a1a6-5679cf0177f5-qa.git"
+    "url": "https://github.com/Emilemuny/demoBlazeEcommerce.git"
   },
   "dependencies": {},
   "devDependencies": {
